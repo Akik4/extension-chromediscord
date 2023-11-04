@@ -1,0 +1,24 @@
+{
+  "name": "Get url",
+  "version": "0.0.1",
+  "description": "Give the url to a server",
+  "manifest_version": 3,
+  "author": "Akik4",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Get url"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "script.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
